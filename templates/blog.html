@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .article {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .article h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .logout {
+            text-align: right;
+        }
+        .logout a {
+            display: inline-block;
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ username }}!</h1>
+        <div class="logout">
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+        <div class="article">
+            <h2>Indian Stock Market Booming Day by Day</h2>
+            <p>The Indian stock market has been on a remarkable upward trajectory in recent times, fueled by a combination of factors such as robust economic growth, favourable government policies, and increased investor confidence. The benchmark indices, Nifty and Sensex, have been consistently reaching new highs, reflecting the bullish sentiment in the market.</p>
+            <p>One of the key drivers of this growth has been the strong performance of various sectors, including information technology, pharmaceuticals, and consumer goods. These industries have been propelled by factors such as rising domestic demand, technological advancements, and a growing middle-class population.</p>
+            <!-- Add more content here -->
+        </div>
+        <div class="article">
+            <h2>Tesla's Innovative Approach to Electric Vehicles</h2>
+            <p>Tesla, the pioneering electric vehicle company, has been disrupting the automotive industry with its innovative and sustainable approach. Founded by Elon Musk, Tesla has been at the forefront of the electric vehicle revolution, pushing the boundaries of what's possible in terms of performance, design, and energy efficiency.</p>
+            <p>One of Tesla's most remarkable achievements is the development of its cutting-edge battery technology, which has enabled the company to produce electric vehicles with impressive range and performance capabilities. The company's flagship models, such as the Model S and Model X, have been widely acclaimed for their sleek designs, powerful acceleration, and advanced features like Autopilot.</p>
+            <!-- Add more content here -->
+        </div>
+    </div>
+</body>
+</html>
